@@ -1,0 +1,32 @@
+/* Paste this at the VERY BOTTOM of style.css */
+
+/* === LIVE TESTIMONIALS + LEFT TO RIGHT TICKER UPDATE START === */
+.ticker{overflow:hidden}
+.ticker div{
+  width:max-content;
+  min-width:200%;
+  display:flex;
+  justify-content:flex-end;
+  gap:42px;
+  animation:tickerLeftToRight 24s linear infinite!important;
+  will-change:transform;
+}
+@keyframes tickerLeftToRight{0%{transform:translateX(-50%)}100%{transform:translateX(0)}}
+
+.testimonials-live-section .section-heading{margin-bottom:38px}
+.testimonial-live-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:start}
+.testimonial-display,.testimonial-form{padding:30px}
+.testimonial-display-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;margin-bottom:22px}
+.testimonial-display-head h3,.testimonial-form h3{font-size:28px;line-height:1.1;margin-top:8px}
+.live-badge{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:rgba(245,130,32,.18);color:#ffb46f;border:1px solid rgba(245,130,32,.34);font-size:12px;font-weight:900;white-space:nowrap}
+.testimonial-list{display:grid;gap:16px;max-height:620px;overflow:auto;padding-right:6px}
+.live-card{min-height:auto;animation:feedbackAppear .45s ease both}
+.customer-added{border-color:rgba(245,130,32,.42);box-shadow:0 20px 58px rgba(245,130,32,.10)}
+.testimonial-form label{display:block;color:#ffb46f;font-weight:900;margin:14px 0 7px}
+.testimonial-form input,.testimonial-form select,.testimonial-form textarea{width:100%;padding:14px 15px;border-radius:16px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.09);color:#fff;font-family:inherit;outline:none}
+.testimonial-form option{color:#111827}
+.testimonial-form input::placeholder,.testimonial-form textarea::placeholder{color:rgba(255,255,255,.58)}
+.form-note{color:#dce8ff;margin-top:8px}.feedback-status{min-height:22px;color:#ffb46f;font-weight:800;margin-top:12px}.hidden-field{display:none}
+@keyframes feedbackAppear{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:900px){.testimonial-live-layout{grid-template-columns:1fr}.testimonial-list{max-height:none}}
+/* === LIVE TESTIMONIALS + LEFT TO RIGHT TICKER UPDATE END === */

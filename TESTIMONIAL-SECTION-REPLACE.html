@@ -1,0 +1,69 @@
+<!-- Replace your existing Testimonials section with this block -->
+<section id="testimonials" class="section-pad testimonials-live-section">
+  <div class="container">
+    <div class="section-heading reveal">
+      <span class="section-label">Testimonials</span>
+      <h2>Customer Feedback</h2>
+      <p>Customers can submit feedback directly from the website. Feedback appears instantly on this page for the visitor and is captured in Netlify Forms for your review.</p>
+    </div>
+
+    <div class="testimonial-live-layout">
+      <div class="testimonial-display glass reveal">
+        <div class="testimonial-display-head">
+          <div>
+            <span class="section-label">Live Wall</span>
+            <h3>Latest Customer Feedback</h3>
+          </div>
+          <span class="live-badge">Live Preview</span>
+        </div>
+
+        <div id="testimonialList" class="testimonial-list">
+          <article class="testimonial live-card">
+            <strong>“</strong>
+            <p>K&M TechSpire Solution provided clear communication, practical support and smooth coordination for our IT requirement.</p>
+            <span>Customer Name • SME Business Owner</span>
+          </article>
+          <article class="testimonial live-card">
+            <strong>“</strong>
+            <p>The team helped us understand the right hardware options and supported the delivery process professionally.</p>
+            <span>Customer Name • Operations Manager</span>
+          </article>
+          <article class="testimonial live-card">
+            <strong>“</strong>
+            <p>Reliable support for technical coordination, site checks and practical deployment assistance.</p>
+            <span>Customer Name • Project Coordinator</span>
+          </article>
+        </div>
+      </div>
+
+      <form id="testimonialForm" class="testimonial-form glass reveal" name="customer-feedback" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="customer-feedback" />
+        <p class="hidden-field"><label>Do not fill this field: <input name="bot-field" /></label></p>
+
+        <span class="section-label">Post Feedback</span>
+        <h3>Share Your Experience</h3>
+        <p class="form-note">Your feedback helps us improve our services.</p>
+
+        <label for="feedbackName">Name</label>
+        <input id="feedbackName" type="text" name="name" placeholder="Your name" required />
+
+        <label for="feedbackCompany">Company / Role</label>
+        <input id="feedbackCompany" type="text" name="company" placeholder="Company name or role" />
+
+        <label for="feedbackRating">Rating</label>
+        <select id="feedbackRating" name="rating" required>
+          <option value="">Select rating</option>
+          <option value="★★★★★">★★★★★ Excellent</option>
+          <option value="★★★★☆">★★★★☆ Good</option>
+          <option value="★★★☆☆">★★★☆☆ Average</option>
+        </select>
+
+        <label for="feedbackMessage">Feedback</label>
+        <textarea id="feedbackMessage" name="feedback" rows="5" placeholder="Write your feedback here" required></textarea>
+
+        <button class="btn primary form-btn" type="submit">Post Feedback</button>
+        <p id="feedbackStatus" class="feedback-status" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
