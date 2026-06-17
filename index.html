@@ -6,16 +6,15 @@
   <title>K&M TechSpire Solution | IT Services & Digital Transformation</title>
   <meta name="description" content="K&M TechSpire Solution (NS0313320-D) provides IT services, deployment, CCTV, smart hand support and digital transformation services." />
   <link rel="canonical" href="https://www.knmtechspiresolution.com/" />
-  <link rel="stylesheet" href="style.css?v=20260617-new-design" />
+  <link rel="stylesheet" href="style.css?v=20260617-clean-hero" />
 </head>
 <body>
   <div class="ai-bg" aria-hidden="true">
     <div class="ai-grid"></div>
     <div class="ai-orb orb-one"></div>
     <div class="ai-orb orb-two"></div>
-    <div class="ai-orb orb-three"></div>
     <div class="ai-keywords">AI TOOLS • AUTOMATION • CLOUD • CCTV • DATA • APPS • FUTURE READY</div>
-    <div class="ai-particles"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="ai-particles"><span></span><span></span><span></span><span></span><span></span><span></span></div>
   </div>
 
   <header class="header">
@@ -45,10 +44,10 @@
 
   <main>
     <section id="home" class="hero section-pad">
-      <div class="container hero-layout">
+      <div class="container hero-layout-clean">
         <div class="hero-copy reveal">
           <span class="eyebrow">✦ IT Services • Deployment • CCTV • Digital Solutions</span>
-          <h1><span>Future-Ready</span> IT Services, Deployment & Digital Transformation</h1>
+          <h1><span>Future-Ready</span> IT Services for Growing Businesses</h1>
           <p>We help businesses source, deploy, manage and support practical technology solutions including IT hardware, software, CCTV hardware, project support and digital transformation services.</p>
           <div class="actions">
             <a class="btn primary" href="#contact">Get a Free Quote</a>
@@ -56,33 +55,21 @@
           </div>
         </div>
 
-        <div class="hero-showcase reveal" id="heroVisual" aria-label="Future-ready technology dashboard visual">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-
-          <div class="main-dashboard parallax" data-speed="10">
-            <div class="dash-bar"><span></span><span></span><span></span><b>K&M Digital Command</b></div>
-            <div class="dash-screen">
-              <div class="dash-head">
-                <div><small>Live Service Matrix</small><h2>Technology Solutions</h2></div>
-                <strong>Online</strong>
-              </div>
-              <div class="progress"><i style="--w:92%"></i><i style="--w:78%"></i><i style="--w:86%"></i></div>
-              <div class="chips"><span>Hardware</span><span>CCTV</span><span>Deployment</span><span>Apps</span></div>
-            </div>
-            <div class="dash-list">
-              <div><b>01</b><span>IT Hardware & Software</span></div>
-              <div><b>02</b><span>CCTV Hardware Support</span></div>
-              <div><b>03</b><span>Project Management Consultancy</span></div>
-              <div><b>04</b><span>Smart Hand Support</span></div>
-              <div><b>05</b><span>App & Digital Solutions</span></div>
-            </div>
+        <div class="hero-clean-panel reveal" id="heroVisual" aria-label="K&M service overview">
+          <div class="panel-header">
+            <span>K&M Service Hub</span>
+            <strong>Online</strong>
           </div>
-
-          <div class="mini-card card-left parallax" data-speed="-16"><strong>24/7</strong><span>Digital-ready support</span></div>
-          <div class="mini-card card-right parallax" data-speed="18"><strong>AI</strong><span>Future-ready workflow</span></div>
-          <div class="data-tile tile-one parallax" data-speed="-10">Cloud</div>
-          <div class="data-tile tile-two parallax" data-speed="14">Secure</div>
+          <div class="panel-title">
+            <small>Digital Transformation Support</small>
+            <h2>Plan • Source • Deploy • Support</h2>
+          </div>
+          <div class="hero-service-grid">
+            <div><b>01</b><h3>IT Hardware</h3><p>Sourcing and delivery support</p></div>
+            <div><b>02</b><h3>CCTV</h3><p>Hardware and setup assistance</p></div>
+            <div><b>03</b><h3>Deployment</h3><p>Installation and configuration</p></div>
+            <div><b>04</b><h3>Smart Hand</h3><p>On-site technical assistance</p></div>
+          </div>
         </div>
       </div>
     </section>
@@ -122,7 +109,6 @@
   <footer class="footer"><div class="container footer-grid"><div><h3>K&M TechSpire Solution</h3><p>Your Partner In Digital Transformation</p><p>Company Registration No: NS0313320-D</p></div><div><h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a></div><div><h4>Services</h4><p>IT Hardware</p><p>Software</p><p>CCTV</p><p>Deployment</p><p>Project Consultancy</p></div><div><h4>Contact</h4><p>admin@knmtechspiresolution.com</p><p>mohan@knmtechspiresolution.com</p></div></div><div class="container footer-bottom">© 2026 K&M TechSpire Solution. All Rights Reserved.</div></footer>
 
   <script>
-    const heroVisual=document.getElementById('heroVisual');const parallaxItems=document.querySelectorAll('.parallax');window.addEventListener('mousemove',e=>{const x=(e.clientX/window.innerWidth-.5)*2;const y=(e.clientY/window.innerHeight-.5)*2;if(heroVisual){heroVisual.style.transform=`rotateY(${x*4}deg) rotateX(${-y*4}deg)`}parallaxItems.forEach(i=>{const s=Number(i.dataset.speed||10);i.style.translate=`${x*s}px ${y*s}px`})});
     const revealElements=document.querySelectorAll('.reveal');const revealObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('active');revealObserver.unobserve(entry.target)}})},{threshold:.14});revealElements.forEach(el=>revealObserver.observe(el));
   </script>
 </body>
