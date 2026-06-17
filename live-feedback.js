@@ -1,5 +1,5 @@
 /* Add this script before </body>, or upload as live-feedback.js and include:
-<script src="live-feedback.js"></script
+<script src="live-feedback.js"></script>
 */
 function encodeFormData(data){return new URLSearchParams(data).toString();}
 const testimonialForm=document.getElementById('testimonialForm');
