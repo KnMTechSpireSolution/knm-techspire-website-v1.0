@@ -1,265 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>K&M TechSpire Solution | IT Services & Digital Transformation</title>
-  <meta name="description" content="K&M TechSpire Solution (NS0313320-D) provides IT services, hardware and software sourcing, CCTV hardware support, deployment, smart hand support, project consultancy and digital transformation services." />
-  <meta name="theme-color" content="#041735" />
-  <link rel="canonical" href="https://www.knmtechspiresolution.com/" />
-  <meta property="og:title" content="K&M TechSpire Solution | IT Services & Digital Transformation" />
-  <meta property="og:description" content="Your Partner In Digital Transformation. IT services, deployment, CCTV, project consultancy and digital solutions." />
-  <meta property="og:url" content="https://www.knmtechspiresolution.com/" />
-  <meta property="og:type" content="website" />
-  <link rel="stylesheet" href="style.css?v=final-no-hero-20260617" />
+  <title>ClientPro Hub v2.0 — All Modules & Templates Accessible</title>
+  <link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
-  <div class="site-bg" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="K&M TechSpire Solution home">
-        <span class="brand-logo">
-          <img src="assets/logo.png" alt="K&M TechSpire Solution Logo" onload="this.classList.add('loaded')" onerror="this.classList.add('missing')" />
-          <span class="logo-fallback">K&M</span>
-        </span>
-        <span class="brand-text">
-          <strong>K&M TechSpire Solution</strong>
-          <em>Your Partner In Digital Transformation</em>
-          <small>Company Registration No: NS0313320-D</small>
-        </span>
-      </a>
-
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-btn" href="#contact">Get Quote</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section id="home" class="hero-simple section-pad">
-      <div class="container hero-simple-inner reveal">
-        <span class="eyebrow">✦ IT Services • Deployment • CCTV • Digital Solutions</span>
-        <h1><span>Future-Ready</span> IT Services for Growing Businesses</h1>
-        <p>We help businesses source, deploy, manage and support practical technology solutions including IT hardware, software, CCTV hardware, project support and digital transformation services.</p>
-        <div class="hero-highlights">
-          <div><b>01</b><span>Plan</span></div>
-          <div><b>02</b><span>Source</span></div>
-          <div><b>03</b><span>Deploy</span></div>
-          <div><b>04</b><span>Support</span></div>
-        </div>
-        <div class="actions center">
-          <a class="btn primary" href="#contact">Get a Free Quote</a>
-          <a class="btn secondary" href="https://wa.me/60176232542?text=Hello%20K%26M%20TechSpire%20Solution%2C%20I%20am%20interested%20in%20your%20IT%20services.%20Please%20contact%20me." target="_blank" rel="noopener">WhatsApp Us</a>
+  <div id="appShell" class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="logo">CP</div>
+        <div>
+          <h1>ClientPro Hub</h1>
+          <p>v2.0 No Login Build</p>
         </div>
       </div>
-    </section>
+      <nav id="nav" class="nav"></nav>
+    </aside>
 
-    <section class="ticker" aria-label="Service ticker">
-      <div class="ticker-track">
-        <span>IT Hardware</span><span>Software</span><span>CCTV</span><span>Deployment</span><span>Project Support</span><span>App Development</span><span>Digital Transformation</span><span>Smart Hand Support</span><span>IT Hardware</span><span>Software</span><span>CCTV</span><span>Deployment</span><span>Project Support</span><span>App Development</span>
-      </div>
-    </section>
+    <main>
+      <header>
+        <button class="menu-btn" type="button" onclick="document.getElementById('sidebar').classList.toggle('open')">☰</button>
+        <strong id="title">Dashboard</strong>
+        <span class="version">v2.0 Accessible Modules</span>
+        <input id="globalSearch" placeholder="Search customers, invoices, projects..." />
+        <button class="primary" type="button" onclick="go('quotationCreate')">+ Quotation</button>
+      </header>
+      <section id="app"></section>
+    </main>
+  </div>
 
-    <section id="about" class="section-pad">
-      <div class="container split-grid">
-        <div class="section-title reveal">
-          <span class="section-label">About Us</span>
-          <h2>Technology Partner for Growing Businesses</h2>
-        </div>
-        <div class="glass reveal">
-          <p>K&M TechSpire Solution (NS0313320-D) is an IT services and consultancy company focused on helping businesses adopt reliable, practical and cost-effective technology solutions.</p>
-          <br />
-          <p>From hardware sourcing and software deployment to CCTV hardware, site surveys, vendor coordination and smart hand support, K&M TechSpire Solution works as a trusted technology partner from planning to implementation.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="section-pad services-section">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-label">What We Do</span>
-          <h2>Our Core Services</h2>
-          <p>Professional IT and digital transformation services supported by real project images.</p>
-        </div>
-
-        <div class="service-grid">
-          <article class="service-card reveal"><div class="service-photo"><img src="assets/service-hardware.jpg" alt="IT Hardware and Software Sourcing" onload="this.classList.add('loaded')" onerror="this.classList.add('missing')"></div><div class="service-body"><h3>IT Hardware & Software Sourcing</h3><p>Hardware, software and technology sourcing based on project needs and budget.</p></div></article>
-          <article class="service-card reveal"><div class="service-photo"><img src="assets/service-deployment.jpg" alt="Hardware Deployment" onload="this.classList.add('loaded')" onerror="this.classList.add('missing')"></div><div class="service-body"><h3>Hardware Deployment</h3><p>Device delivery, installation, configuration and deployment support.</p></div></article>
-          <article class="service-card reveal"><div class="service-photo"><img src="assets/service-cctv.jpg" alt="CCTV Hardware Solutions" onload="this.classList.add('loaded')" onerror="this.classList.add('missing')"></div><div class="service-body"><h3>CCTV Hardware Solutions</h3><p>CCTV hardware sourcing and setup support for commercial locations.</p></div></article>
-          <article class="service-card reveal"><div class="service-photo"><img src="assets/service-project.jpg" alt="Project Management Consultancy" onload="this.classList.add('loaded')" onerror="this.classList.add('missing')"></div><div class="service-body"><h3>Project Management Consultancy</h3><p>Site survey, vendor management, planning and coordination support.</p></div></article>
-          <article class="service-card reveal"><div class="service-photo"><img src="assets/service-smart-hand.jpg" alt="Smart Hand Support" onload="this.classList.add('loaded')" onerror="this.classList.add('missing')"></div><div class="service-body"><h3>Smart Hand Support</h3><p>On-site assistance for troubleshooting, hardware checks and remote engineer support.</p></div></article>
-          <article class="service-card reveal"><div class="service-photo"><img src="assets/service-app.jpg" alt="App Development and Digital Solutions" onload="this.classList.add('loaded')" onerror="this.classList.add('missing')"></div><div class="service-body"><h3>App Development & Digital Solutions</h3><p>Simple business apps, workflow tools, digital forms and company systems.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="portfolio" class="section-pad">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-label">Portfolio & Gallery</span>
-          <h2>Our Work in Action</h2>
-          <p>Showcase real project photos from delivery, deployment, CCTV setup, site survey and smart hand support work.</p>
-        </div>
-        <div class="portfolio-grid">
-          <article class="gallery-card large reveal"><b>Featured Project</b><h3>IT Hardware Delivery & Deployment</h3><p>Use this space for a real project photo showing equipment, delivery work or installation activity.</p></article>
-          <div class="gallery-stack">
-            <article class="gallery-card reveal"><b>CCTV</b><h3>CCTV Hardware Support</h3><p>Display CCTV equipment, camera placement or installation preparation photos.</p></article>
-            <article class="gallery-card reveal"><b>Consultancy</b><h3>Site Survey & Vendor Coordination</h3><p>Highlight project coordination, documentation, site visit or technical support activities.</p></article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="testimonials" class="section-pad testimonials-live-section">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-label">Testimonials</span>
-          <h2>Customer Feedback</h2>
-          <p>Customers can submit feedback directly from the website. Feedback appears instantly on this page for the visitor and is captured in Netlify Forms for review.</p>
-        </div>
-
-        <div class="testimonial-live-layout">
-          <div class="testimonial-display glass reveal">
-            <div class="testimonial-display-head">
-              <div><span class="section-label">Live Wall</span><h3>Latest Customer Feedback</h3></div>
-              <span class="live-badge">Live Preview</span>
-            </div>
-            <div id="testimonialList" class="testimonial-list">
-              <article class="testimonial live-card"><strong>“</strong><p>K&M TechSpire Solution provided clear communication, practical support and smooth coordination for our IT requirement.</p><span>Customer Name • SME Business Owner</span></article>
-              <article class="testimonial live-card"><strong>“</strong><p>The team helped us understand the right hardware options and supported the delivery process professionally.</p><span>Customer Name • Operations Manager</span></article>
-              <article class="testimonial live-card"><strong>“</strong><p>Reliable support for technical coordination, site checks and practical deployment assistance.</p><span>Customer Name • Project Coordinator</span></article>
-            </div>
-          </div>
-
-          <form id="testimonialForm" class="testimonial-form glass reveal" name="customer-feedback" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="customer-feedback" />
-            <p class="hidden-field"><label>Do not fill this field: <input name="bot-field" /></label></p>
-            <span class="section-label">Post Feedback</span>
-            <h3>Share Your Experience</h3>
-            <p class="form-note">Your feedback helps improve K&M TechSpire Solution services.</p>
-            <label for="feedbackName">Name</label>
-            <input id="feedbackName" type="text" name="name" placeholder="Your name" required />
-            <label for="feedbackCompany">Company / Role</label>
-            <input id="feedbackCompany" type="text" name="company" placeholder="Company name or role" />
-            <label for="feedbackRating">Rating</label>
-            <select id="feedbackRating" name="rating" required>
-              <option value="">Select rating</option>
-              <option value="★★★★★">★★★★★ Excellent</option>
-              <option value="★★★★☆">★★★★☆ Good</option>
-              <option value="★★★☆☆">★★★☆☆ Average</option>
-            </select>
-            <label for="feedbackMessage">Feedback</label>
-            <textarea id="feedbackMessage" name="feedback" rows="5" placeholder="Write your feedback here" required></textarea>
-            <button class="btn primary form-btn" type="submit">Post Feedback</button>
-            <p id="feedbackStatus" class="feedback-status" role="status"></p>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="container reveal">
-        <h2>Need IT Support or a Technology Solution?</h2>
-        <p>Let K&M TechSpire Solution help you plan, source and deploy the right solution for your business.</p>
-        <div class="actions center"><a class="btn secondary" href="#contact">Request a Quote</a><a class="btn secondary" href="https://wa.me/60176232542?text=Hello%20K%26M%20TechSpire%20Solution%2C%20I%20am%20interested%20in%20your%20IT%20services.%20Please%20contact%20me." target="_blank" rel="noopener">Chat on WhatsApp</a></div>
-      </div>
-    </section>
-
-    <section id="contact" class="section-pad">
-      <div class="container split-grid">
-        <div class="glass reveal">
-          <span class="section-label">Contact Us</span>
-          <h2>Get in Touch</h2>
-          <p>Ready to discuss your IT requirements? Send an enquiry and K&M TechSpire Solution will get back to you.</p>
-          <br />
-          <p><strong>Email:</strong> admin@knmtechspiresolution.com</p>
-          <p><strong>Founder Email:</strong> mohan@knmtechspiresolution.com</p>
-          <p><strong>Company Registration No:</strong> NS0313320-D</p>
-          <br />
-          <a class="btn primary" href="https://wa.me/60176232542?text=Hello%20K%26M%20TechSpire%20Solution%2C%20I%20am%20interested%20in%20your%20IT%20services.%20Please%20contact%20me." target="_blank" rel="noopener">WhatsApp Us Now</a>
-        </div>
-
-        <form class="contact-form glass reveal" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contact" />
-          <input type="hidden" name="subject" value="New Website Enquiry - K&M TechSpire Solution" />
-          <p class="hidden-field"><label>Do not fill this field: <input name="bot-field" /></label></p>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required />
-          <label for="company">Company Name</label>
-          <input type="text" id="company" name="company" placeholder="Your company name" />
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" placeholder="Your phone number" required />
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="Your email address" required />
-          <label for="service">Service Required</label>
-          <select id="service" name="service">
-            <option value="">Select a service</option>
-            <option>IT Hardware & Software Sourcing</option>
-            <option>Hardware Deployment</option>
-            <option>CCTV Hardware Solutions</option>
-            <option>Project Management Consultancy</option>
-            <option>Smart Hand Support</option>
-            <option>App Development & Digital Solutions</option>
-          </select>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell us about your requirement"></textarea>
-          <button class="btn primary form-btn" type="submit">Submit Enquiry</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div><h3>K&M TechSpire Solution</h3><p>Your Partner In Digital Transformation</p><p>Company Registration No: NS0313320-D</p></div>
-      <div><h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a></div>
-      <div><h4>Services</h4><p>IT Hardware</p><p>Software</p><p>CCTV</p><p>Deployment</p><p>Project Consultancy</p></div>
-      <div><h4>Contact</h4><p>admin@knmtechspiresolution.com</p><p>mohan@knmtechspiresolution.com</p></div>
-    </div>
-    <div class="container footer-bottom">© 2026 K&M TechSpire Solution. All Rights Reserved.</div>
-  </footer>
-
-  <script>
-    const revealElements=document.querySelectorAll('.reveal');
-    const revealObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('active');revealObserver.unobserve(entry.target)}})},{threshold:.12});
-    revealElements.forEach(el=>revealObserver.observe(el));
-
-    function encodeFormData(data){return new URLSearchParams(data).toString();}
-    const testimonialForm=document.getElementById('testimonialForm');
-    const testimonialList=document.getElementById('testimonialList');
-    const feedbackStatus=document.getElementById('feedbackStatus');
-    const storageKey='knm_customer_feedback_v1';
-    function sanitizeText(value){const div=document.createElement('div');div.textContent=value||'';return div.innerHTML;}
-    function addFeedbackCard(item,save){
-      if(!testimonialList)return;
-      const card=document.createElement('article');
-      card.className='testimonial live-card customer-added';
-      card.innerHTML=`<strong>“</strong><p>${sanitizeText(item.feedback)}</p><span>${sanitizeText(item.rating)} • ${sanitizeText(item.name)}${item.company?' • '+sanitizeText(item.company):''}</span>`;
-      testimonialList.prepend(card);
-      if(save){const existing=JSON.parse(localStorage.getItem(storageKey)||'[]');existing.unshift(item);localStorage.setItem(storageKey,JSON.stringify(existing.slice(0,10)));}
-    }
-    try{JSON.parse(localStorage.getItem(storageKey)||'[]').reverse().forEach(item=>addFeedbackCard(item,false));}catch(error){console.warn('Feedback storage could not be loaded',error);}
-    if(testimonialForm){testimonialForm.addEventListener('submit',async function(event){
-      event.preventDefault();
-      const formData=new FormData(testimonialForm);
-      const item={name:formData.get('name'),company:formData.get('company'),rating:formData.get('rating'),feedback:formData.get('feedback')};
-      if(feedbackStatus)feedbackStatus.textContent='Posting feedback...';
-      try{
-        await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:encodeFormData(formData)});
-        addFeedbackCard(item,true);testimonialForm.reset();
-        if(feedbackStatus)feedbackStatus.textContent='Thank you. Your feedback has been posted and submitted.';
-      }catch(error){
-        addFeedbackCard(item,true);
-        if(feedbackStatus)feedbackStatus.textContent='Feedback is shown here. If connection failed, please try again later.';
-      }
-    });}
-  </script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
